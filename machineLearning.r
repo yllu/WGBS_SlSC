@@ -27,7 +27,7 @@ rf <- randomForest(label_expr ~ .,
                   data = traindata,
                   mtry = 8,
                   ntree = 200,
-				  importance = T,
+		  importance = T,
                   proximity = TRUE)
 
 ## importance
