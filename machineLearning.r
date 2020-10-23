@@ -47,8 +47,7 @@ plot(modelroc, print.auc = TRUE, auc.polygon = TRUE, grid = c(0.1,0.2),
 dev.off()
 
 # decision tree
-df <- read.table("gene.MS.tab",
-                 header = T)
+df <- read.table("gene.MS.tab", header = T)
 df <- df[,-which(names(df) %in% c("geneID"))]
 df$label_expr <- gsub("0","Not Expressed",df$label_expr)
 df$label_expr <- gsub("1","Expressed",df$label_expr)
